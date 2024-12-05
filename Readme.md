@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-The Dynamic Blog Website is a versatile and user-friendly platform designed to facilitate the creation, management, and viewing of blog posts. Developed by Harry Joseph, this site leverages JavaScript and local storage to provide a seamless blogging experience directly within your web browser. Users can write, view, edit, and delete blog posts, with all data being saved locally, eliminating the need for a server. The project is continuously improved to enhance functionality and user experience.
+The Dynamic Blog Website is a versatile and user-friendly platform designed to facilitate the creation, management, and viewing of blog posts. Developed by Harry Joseph, this site leverages JavaScript and local storage to provide a seamless blogging experience directly within your web browser. Users can write, view, edit, and delete blog posts, with all data being saved locally, eliminating the need for a server. The project is continuously improved to enhance functionality and user experience. 
 
 ### Features
 
