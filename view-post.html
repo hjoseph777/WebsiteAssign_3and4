@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="blog-shared.css">
+    <style>
+        body.default {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        body.light {
+            background-color: #fff;
+            color: #000;
+        }
+        body.grey {
+            background-color: #808080;
+            color: #fff;
+        }
+        body.beige {
+            background-color: #F5F5DC;
+            color: #333;
+        }
+        .theme-selector {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background: #fff;
+            color: #333;
+            border: none;
+            padding: 5px;
+            border-radius: 4px;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body data-page="view-post" class="default">
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="new-post.html">New Post</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <article class="section">
+            <h1 id="post-title" class="post-title"></h1>
+            <div id="post-content" class="post-content"></div>
+            <div id="post-actions" class="post-actions">
+                <a href="index.html" class="btn">Back to Home</a>
+                <button id="edit-post" class="btn btn-edit">Edit Post</button>
+                <button id="delete-post" class="btn btn-delete">Delete Post</button>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Blog</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
