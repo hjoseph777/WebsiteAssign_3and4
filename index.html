@@ -1,3 +1,6 @@
+Here is the updated `index.html` with the provided code integrated:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -262,6 +265,25 @@
             overflow: auto; /* Ensure scrollbars appear when needed */
         }
     </style>
+    <script type="module">
+        import API_KEYS from './config.js';
+        
+        // Create map script dynamically
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEYS.GOOGLE_MAPS}&callback=initMap&libraries=maps,marker&v=beta`;
+        script.async = true;
+        script.onerror = () => {
+            console.error('Failed to load Google Maps script');
+        };
+        document.head.appendChild(script);
+
+        // Global initMap function
+        window.initMap = function() {
+            console.log('Google Maps initialized');
+        };
+    </script>
+    <!-- Your other scripts -->
+    <script type="module" src="geolocation.js"></script>
 </head>
 <body data-page="index" class="default">
     <header>
@@ -388,13 +410,6 @@
     <script src="scripts.js" defer></script>
     <script type="module" src="geolocation.js" defer></script>
     <script src="project-details.js" defer></script>
-    <script type="module">
-        import API_KEYS from './config.js';
-        const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEYS.GOOGLE_MAPS}&callback=initMap&libraries=maps,marker&v=beta`;
-        script.async = true;
-        document.head.appendChild(script);
-    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const blogPostsContainer = document.getElementById('blog-posts');
@@ -476,3 +491,5 @@
     </script>
 </body>
 </html>
+
+
