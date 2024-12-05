@@ -1,4 +1,4 @@
-const API_KEYS = {
+// Correct export syntax
+export default {
     GOOGLE_MAPS: 'AIzaSyCMxPgEqR2nQYWRAxacBnRiH_R1Rg4dtAM'
 };
-export default API_KEYS;
